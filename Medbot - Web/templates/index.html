@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medbot</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/5506f7f00f.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <div class="container">
+
+        <h1 style="text-align: center; ">MedBot</h1>
+        <div style="text-align: center;">
+            <button type="button" id="myCheck" onclick="wishMe()">Start Medbot</button>
+        </div>
+        <h3 class="no-browser-support">Sorry, Your Browser Doesn't Support the Web Speech API. Try Opening This Demo In Google Chrome.</h3>
+
+        <div class="dynamicBox">
+            <div class="dynamicBox_inner_contents">
+                <p id="dynamic-content"></p>
+            </div>
+        </div>
+
+        <div class="contents">
+            <div class="inner_contents">
+                <label for="Medicine">Medicine Name :</label>
+                <input type="text" name="Medicine" id="Medicine">
+                <button id="medicine-icon" onclick="InputName()"></button><br>
+
+                <br>
+                <label for="Schedule">Listen to Schedule : </label>
+                <button name="Schedule" id="schedule-icon" onclick="InputSchedule()"></button>
+
+
+                <br><br>
+                <label for="Morning">Morning : </label>
+                <input type="checkbox" id="morning" name="Morning" checked>
+                </br>
+                <label for="Afternoon">Afternoon : </label>
+                <input type="checkbox" id="afternoon" name="Afternoon" checked>
+
+                </br>
+                <label for="Evening">Evening : </label>
+                <input type="checkbox" id="evening" name="Evening" checked>
+            </div>
+        </div>
+        <br>
+        <div style="text-align: center;">
+            <button  id="update" onclick="verify()" disabled>Update</button>
+        </div>
+
+        <p id="status">Click on Start Medbot Button to launch</p>
+    </div>
+
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+</body>
+
+</html>
