@@ -34,7 +34,7 @@ Our main focus is to provide the same application experience for all users.
 ![Medbot - WEB.png](Screenshots/Web.PNG)
 
 ## Sample Receipt
-![Receipt.png](Screenshots/Receipt.PNG)
+![Receipt.png](Screenshots/Receipt.png)
 
 ---
 
