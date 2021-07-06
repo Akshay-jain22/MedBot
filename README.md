@@ -1,5 +1,17 @@
 # MedBot
 
+## Demo
+
+- Command Line Interface
+
+https://user-images.githubusercontent.com/64270972/124591980-93ae9280-de7a-11eb-969c-6c6846f70328.mp4
+
+- Graphical User Interface
+
+https://user-images.githubusercontent.com/64270972/124592043-a4f79f00-de7a-11eb-86a4-b4e1fc38baca.mp4
+
+---
+
 ## Objective
 Create a Tool for Voice Based Medicine Prescriptions in order to prevent spreading of any contagious diseases through hand-written prescriptions
 
